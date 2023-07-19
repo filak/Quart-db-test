@@ -58,11 +58,7 @@ Traceback (most recent call last):
 RuntimeError: Not within an app context
 ```
 
-The latest version (v3.0.2) of quart-sqlalchemy installed via 
-
-    pip install https://github.com/joeblackwaslike/quart-sqlalchemy/archive/refs/heads/simple.zip
-
-does not wotk either:
+The latest version (v3.0.2) of quart-sqlalchemy does not wotk either:
 
 ```
 Traceback (most recent call last):
