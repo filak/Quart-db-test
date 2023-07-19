@@ -1,0 +1,51 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: Flask",
+        "type": "python",
+        "request": "launch",
+        "module": "flask",
+        "justMyCode": false,
+        "env": {
+          "FLASK_APP": "flask-app.py",
+          "FLASK_ENV": "development",
+          "FLASK_DEBUG": "1"
+        },
+        "args": [
+          "run",
+          "--no-debugger",
+          "--no-reload"
+        ],
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "Python: Quart",
+        "type": "python",
+        "request": "launch",
+        "program": "quart-app.py",
+        "justMyCode": false,
+        "env": {
+          "QUART_ENV": "development",
+          "QUART_DEBUG": "1"
+        },
+        "args": [],
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "Python: Quart Server",
+        "type": "python",
+        "request": "launch",
+        "program": "quart-srv.py",
+        "justMyCode": false,
+        "env": {
+          "QUART_ENV": "development",
+          "QUART_DEBUG": "1"
+        },
+        "args": [
+          "--db"
+        ],
+        "console": "integratedTerminal"
+      }      
+    ]
+}
