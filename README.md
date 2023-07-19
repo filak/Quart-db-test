@@ -14,7 +14,7 @@ Run Quart app:
 
     py quart-app.py
 
-=>
+=> Error
 
 ```
 Traceback (most recent call last):
@@ -27,11 +27,11 @@ Run Quart app factory without SQLAlchemy - OK:
 
     py quart-srv.py
 
-Run Quart app factory with SQLAlchemy - OK:
+Run Quart app factory with SQLAlchemy:
 
     py quart-srv.py --db
 
-=>
+=> Error
 
 ```
 Traceback (most recent call last):
