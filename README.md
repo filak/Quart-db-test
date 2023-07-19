@@ -1,4 +1,10 @@
-# Quart-db-test
+# Quart with quart-sqlalchemy extension
+
+https://github.com/pallets/quart/
+
+https://github.com/joeblackwaslike/quart-sqlalchemy/
+
+## Testing
 
 - Create and activate VENV
 - Install deps from requirements_test.txt
@@ -51,4 +57,23 @@ Traceback (most recent call last):
     raise RuntimeError(unbound_message) from None
 RuntimeError: Not within an app context
 ```
-  
+
+The latest version (v3.0.2) of quart-sqlalchemy installed via 
+
+    pip install https://github.com/joeblackwaslike/quart-sqlalchemy/archive/refs/heads/simple.zip
+
+does not wotk either:
+
+```
+Traceback (most recent call last):
+  File "D:\Decko\Quart-db-test\quart-app.py", line 4, in <module>
+    from quart_sqlalchemy import SQLAlchemy
+  File "D:\Decko\Quart-db-test\venv\lib\site-packages\quart_sqlalchemy\__init__.py", line 3, in <module>
+    from .bind import AsyncBind
+  File "D:\Decko\Quart-db-test\venv\lib\site-packages\quart_sqlalchemy\bind.py", line 15, in <module>
+    from . import signals
+  File "D:\Decko\Quart-db-test\venv\lib\site-packages\quart_sqlalchemy\signals.py", line 6, in <module>
+    from quart.signals import AsyncNamespace
+ImportError: cannot import name 'AsyncNamespace' from 'quart.signals' (D:\Decko\Quart-db-test\venv\lib\site-packages\quart\signals.py)
+```
+
