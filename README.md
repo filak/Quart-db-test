@@ -73,3 +73,47 @@ Traceback (most recent call last):
 ImportError: cannot import name 'AsyncNamespace' from 'quart.signals' (D:\Decko\Quart-db-test\venv\lib\site-packages\quart\signals.py)
 ```
 
+## Currently installed libs
+
+```
+Package           Version
+----------------- -------
+aiofiles          23.1.0
+aiosqlite         0.19.0
+annotated-types   0.5.0
+anyio             3.3.4
+blinker           1.6.2
+click             8.1.6
+colorama          0.4.6
+exceptiongroup    1.1.2
+Flask             2.3.2
+Flask-SQLAlchemy  3.0.5
+greenlet          2.0.2
+h11               0.14.0
+h2                4.1.0
+hpack             4.0.0
+hypercorn         0.14.4
+hyperframe        6.0.1
+idna              3.4
+itsdangerous      2.1.2
+Jinja2            3.1.2
+MarkupSafe        2.1.3
+pip               23.2
+priority          2.0.0
+pydantic          2.0.3
+pydantic_core     2.3.0
+quart             0.18.3
+quart-flask-patch 0.1.0
+quart-sqlalchemy  3.0.2
+setuptools        68.0.0
+sniffio           1.3.0
+SQLAlchemy        1.4.41
+SQLAlchemy-Utils  0.41.1
+sqlapagination    0.0.1
+tenacity          8.2.2
+tomli             2.0.1
+typing_extensions 4.7.1
+Werkzeug          2.3.6
+wsproto           1.2.0
+```
+
