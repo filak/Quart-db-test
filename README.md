@@ -58,7 +58,7 @@ Traceback (most recent call last):
 RuntimeError: Not within an app context
 ```
 
-The latest version (v3.0.2) of quart-sqlalchemy does not wotk either:
+The latest version (v3.0.2) of quart-sqlalchemy seems having some issues:
 
 ```
 Traceback (most recent call last):
