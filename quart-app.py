@@ -18,6 +18,11 @@ with app.app_context():
     db.drop_all()
     db.create_all()        
 
+    db.session.add(User(username="example"))
+    db.session.commit()
+
+    users = db.session.execute(db.select(User)).scalars()   
+
 @app.route('/')
 async def intro():
     return await render_template('index.html')
